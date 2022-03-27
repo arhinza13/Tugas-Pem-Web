@@ -1,0 +1,31 @@
+<html>
+<head> </head>
+<SCRIPT language="Javascript">
+function test () {
+var val1=document.kirim.T1.value
+if (val1 >= 0)
+document.kirim.T2.value="E"
+if (val1 > 40)
+document.kirim.T2.value="D"
+if (val1 > 55)
+document.kirim.T2.value="C"
+if (val1 > 60)
+document.kirim.T2.value="BC"
+if (val1 > 65)
+document.kirim.T2.value="B"
+if (val1 > 70)
+document.kirim.T2.value="AB"
+if (val1 > 80)
+document.kirim.T2.value="A"
+}
+</SCRIPT>
+<body>
+<form method="POST" name="kirim">
+<p>BILANGAN &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="T1" size="2"><br><br>
+HASI CONVERT <input type="text" name="T2" size="2">
+</p>
+<p><input type="button" value="Convert" name="B1" onclick=test()>
+</p>
+</form>
+</body>
+</html>
